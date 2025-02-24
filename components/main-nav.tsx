@@ -8,6 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import { Home, QrCode, Send, Wallet, CreditCard, Receipt, PhoneCall, Settings, LogOut, Menu } from "lucide-react"
+import Image from "next/image"
 
 const navItems = [
   { icon: Home, label: "Dashboard", path: "/" },
@@ -29,7 +30,7 @@ export function MainNav() {
       <nav className="hidden md:flex flex-col w-64 h-screen bg-background border-r">
         <div className="p-6">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold text-2xl">TPay</span>
+           <Image src="/assets/tpay.png" width={40} height={40} alt={""} />
           </Link>
         </div>
         <ScrollArea className="flex-1">
