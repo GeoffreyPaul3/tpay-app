@@ -10,13 +10,13 @@ export function DashboardHeader() {
   return (
     <div className="flex justify-between items-center py-6">
       <div className="flex items-center gap-3">
-        <Avatar className="w-12 h-12 rounded-xl border-2 border-primary/10">
+        <Avatar className="w-12 h-12 border-2 border-primary/10">
           <AvatarImage src="/placeholder.svg" alt="User" />
-          <AvatarFallback>NK</AvatarFallback>
+          <AvatarFallback>GP</AvatarFallback>
         </Avatar>
         <div>
           <div className="text-muted-foreground text-sm">Good evening,</div>
-          <div className="text-lg font-semibold">Neha Kapoor</div>
+          <div className="text-lg font-semibold">Geoffrey Paul</div>
         </div>
       </div>
       <Button
